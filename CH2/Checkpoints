@@ -1,0 +1,104 @@
+#2.1
+width = 5.5
+height = 2
+print("area is", width * height)
+
+#2.2
+miles = 100
+kilometers = miles * 1.609
+print("Kilometers = ", kilometers)
+
+#2.3
+eval(input("Promote message" ))
+
+#2.4
+Causes a runtime error
+
+#2.5
+Using continuation symbol \
+
+#2.6
+miles --> Valid
+Test  --> Valid
+a+b   --> Not Valid
+b–a   --> Not Valid
+4#R   --> Not Valid
+$4    --> Not Valid
+#44   --> Not Valid
+apps  --> Valid
+if    --> Keyword
+elif  --> Keyword
+x     --> Valid
+y     --> Valid
+radius--> Valid
+
+#2.7
+if the variable is one word ,then it should be small. If the variable is more than
+one word, first word should be small and concatenate the rest of the variable name by
+Capitalizing first letter of each word(ex: valueOfNumber)
+
+#2.8
+assignment should be like this --> variableName = value
+
+#2.9
+x = 0, y =o and z = 0
+
+#2.10
+a has the value of b, a = 2
+b has the old value of a, b =1
+
+#2.11
+>>> 42/5 = 8.4
+>>> 42//5 = 8
+>>> 42%5 = 2
+>>> 40%5 = 0
+>>> 1%2 = 1
+>>> 2%1 = 0
+>>> 45+4*4-2 = 59
+>>> 45+43%5*(23*3%2) = 48
+>>> 5**2 = 25
+>>> 5.1**2 = 26.009999999999998
+
+#2.12
+Tuesday is the 4th day starting from Saturday, after 100 days it wil be thursday
+
+#2.13
+25/4 = 5.25
+to be integer value write 25//4
+
+#2.14
+4.0 / (3.0 * (r + 34)) – 9 * (a + b * c) + (3.0 + d * (2 + a)) / (a + b * d)
+
+#2.15
+m*r**2 or m *r*r
+
+#2.16
+a += 4 = 5
+a -= 4 = -3
+a *= 4 = 4
+a /= 4 = 0.25
+a //= 4 = 0
+a %= 4  =1
+a = 56 * a + 6 = 62
+
+#2.17
+The fractional part is truncated
+using int(value) does not change variable value.
+
+#2.18
+value = 4.6              --> correct, 4.6
+print(int(value))        --> correct, 4
+print(round(value))      --> correct, 5
+print(eval("4 * 5 + 2")) --> correct, 22
+print(int("04"))         --> correct, 4
+print(int("4.5"))        --> error
+print(eval("04"))        --> error
+
+#2.19
+The UNIX epoch is the time 00:00:00 on January 1, 1970 GMT
+
+#2.20
+The total seconds from unix epoch
+
+#2.21
+int(time.time())
