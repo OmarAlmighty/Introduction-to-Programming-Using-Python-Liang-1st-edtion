@@ -1,0 +1,147 @@
+#3.1
+(a) math.sqrt(4) --> 2.0
+(j) math.floor(-2.5) --> -3
+(b) math.sin(2 * math.pi) --> -2.4492935982947064e-16
+(k) round(3.5) --> 4
+(c) math.cos(2 * math.pi) --> 1.0
+(l) round(-2.5) --> -2
+(d) min(2, 2, 1) --> 1
+(m) math.fabs(2.5) --> 2.5
+(e) math.log(math.e) --> 1.0
+(n) math.ceil(2.5) -->3
+(f) math.exp(1) --> 2.718281828459045
+(o) math.floor(2.5) --> 2
+(g) max(2, 3, 4) --> 4
+(p) round(-2.5) --> -2
+(h) abs(-2.5) --> 2.5
+(q) round(2.6) --> 3
+(i) math.ceil(-2.5) --> -2
+(r) round(math.fabs(-2.5)) --> 2
+
+#3.2
+True
+
+#3.3
+var = math.radians(47)
+
+#3.4
+var = math.degrees(math.pi/7)
+
+#3.5
+ord('1') --> 49
+ord('A') --> 65
+ord('B') --> 66
+ord('a') --> 97
+ord('b') --> 98
+chr(40) ---> '('
+chr(59) ---> ';'
+chr(79) ---> 'O'
+chr(85) ---> 'U'
+chr(90) ---> 'Z'
+
+#3.6
+To display \, write print("\\")
+To display ", write print("\"")
+
+#3.7
+using \u followed with code. For example:\u0055
+
+#3.8
+it will print 'D'
+
+#3.9
+25
+
+#3.10
+cannot concatenate strings with integers.
+write: title = "Chapter"+str(1)
+
+#3.11
+5
+23
+
+#3.12
+In Python, a number is an object, a string is an object, and every datum is an object. Objects
+of the same kind have the same type.
+
+The functions for the objects are called methods in Python. Methods can only be invoked from a
+specific object.
+
+#3.13
+using id() method
+using type() method
+
+#3.14
+(b) n is a variable that references an object that holds int value 3.
+
+#3.15
+	georgia
+	GEORGIA
+
+#3.16
+Good	Morning
+
+#3.17
+The function returns a string.
+
+#3.18
+the width increases automatically to fit the string
+
+#3.19
+print(format(57.467657, "9.3f")) --->    57.468
+print(format(12345678.923, "9.1f")) ---> 12345678.9
+print(format(57.4, ".2f")) ---> 57.40
+print(format(57.4, "10.2f")) --->      57.40
+
+#3.20
+print(format(57.467657, "9.3e")) ---> 5.747e+01
+print(format(12345678.923, "9.1e")) --->   1.2e+07
+print(format(57.4, ".2e")) ---> 5.74e+01
+print(format(57.4, "10.2e")) --->   5.74e+01
+
+#3.21
+print(format(5789.467657, "9.3f")) --->  5789.468
+print(format(5789.467657, "<9.3f")) ---> 5789.468
+print(format(5789.4, ".2f")) ---> 5789.40
+print(format(5789.4, "<.2f")) ---> 5789.40
+print(format(5789.4, ">9.2f")) --->   5789.40
+
+#3.22
+print(format(0.457467657, "9.3%")) --->   45.747%
+print(format(0.457467657, "<9.3%")) ---> 45.747%
+
+#3.23
+print(format(45, "5d")) --->    45
+print(format(45, "<5d")) ---> 45
+print(format(45, "5x")) --->    2d
+print(format(45, "<5x")) ---> 2d
+
+#3.24
+print(format("Programming is fun", "25s")) ---> Programming is fun
+print(format("Programming is fun", "<25s")) ---> Programming is fun
+print(format("Programming is fun", ">25s")) --->        Programming is fun
+
+#3.25
+turtle.home()
+
+#3.26
+turtle.dot(3, "red")
+
+#3.27
+Triangle
+
+#3.28
+turtle.speed(s) Sets the turtle’s speed to an integer between 1 and 10, with 10 being the fastest.
+
+#3.29
+turtle.undo()
+
+#3.30
+turtle.color(color)
+
+#3.31
+use turtle.begin_fill() to begin to fill color in a shape
+and turtle.end_fill()  to fill the shape
+
+#3.32
+turtle.hideturtle()
