@@ -1,0 +1,165 @@
+#4.1
+< , > , <= , >= , == , !=
+
+#4.2
+i = 1
+j = 0
+b1 = True
+b2 = False
+
+#4.3
+random.randint(0, 19)
+
+#4.4
+random.randint(10, 19)
+
+#4.5
+random.randint(10, 50)
+
+#4.6
+random.randint(0, 1)
+
+#4.7
+if y >0:
+    x = 1
+
+#4.8
+if score > 90:
+  pay *= 1.03
+
+#4.9
+if score > 90:
+  pay *= 1.03
+eles:
+  pay *= 1.01
+
+#4.10
+(a): is even.
+     is odd.
+(b): is odd.
+
+#4.11
+if x =3 and y =2 --> x is 3
+if x =3 and y =4 --> z is 7
+if x =2 and y =2 --> no output
+
+#4.12
+if x = 2 and y = 4 --> x is 2
+if x = 3 and y = 2 --> no output
+if x = 3 and y = 3 --> z is 6
+
+#4.13
+The conditions are tested in the wrong orders
+
+#4.14
+A and C are equivalent, but B and D are incorrectly indented.
+
+#4.15
+newLine = (count % 10 == 0)
+
+#4.16
+Both are correct. B is better
+Both conditions in A are tested. In B the condition is tested only once.
+
+#4.17
+in code (a):
+    if number = 14 --> 14 is even
+    if number = 15 --> 15 is multiple of 5
+    if number = 30 --> 30 is is even
+                       30 is multiple of 5
+in code (b):
+    if number = 14 --> 14 is even
+    if number = 15 --> 15 is multiple of 5
+    if number = 30 --> 30 is is even
+
+#4.18
+yes
+
+#4.19
+Causes a runtime error, because tax will not be created.
+
+#4.20
+True and (3 > 4) --> False
+not (x > 0) and (x > 0)  --> False
+(x > 0) or (x < 0) --> True
+(x != 0) or (x == 0) --> True
+(x >= 0) or (x < 0) --> True
+(x != 1) == not (x == 1)  --> True
+
+#4.21
+(num > 1) and (num < 100)
+
+#4.22
+((num > 1) and (num < 100)) or (num < 0)
+
+#4.23
+x >= y >= 0 --> False
+x <= y >= 0 --> True
+x != y == 5 --> True
+(x != 0) or (x == 0) --> True
+
+#4.24
+Yes
+
+#4.25
+if ch = 'A' --> True
+if ch = 'p' --> False
+if ch = 'E' --> True
+if ch = '5' --> False
+
+#4.26
+(x < y and y < z) is True
+(x < y or y < z) is True
+not (x < y) is False
+(x < y < z) is True
+not (x < y < z) is False
+
+#4.27
+age > 13 and age < 18
+
+#4.28
+weight > 50 or height > 160
+
+#4.29
+weight > 50 and height > 160
+
+#4.30
+(weight > 50 or height > 160) and not (weight > 50 and height > 160)
+
+#4.31
+Sorted
+
+#4.32
+(a)ticketPrice = 20 if ages >= 16 else 10
+(b)print(count, end = "\n" if count % 10 == 0 else " ")
+
+#4.33
+(a) if x >10:
+       score = 3 * scale
+    else:
+       score = 4 * scale
+(b) if income > 10000:
+        tax = income * 0.2
+    else:
+        tax = income * 0.17 + 1000
+(c) if number % 3 == 0:
+        print(i)
+    else:
+        print(j)
+
+#4.34
+The precedence order of the Boolean operators are not, and, or in this order.
+True
+True
+
+#4.35
+True
+
+#4.36
+False
+False
+
+#4.37
+Is (x > 0 and x < 10) the same as ((x > 0) and (x < 10))? Yes
+Is (x > 0 or x < 10) the same as ((x > 0) or (x < 10))? Yes
+Is (x > 0 or x < 10 and y < 0) the same as (x > 0 or (x < 10 and y < 0))? yes
