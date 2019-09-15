@@ -1,0 +1,139 @@
+#5.1
+At point A, count<100 is always true.
+At point B, count<100 is sometimes true.
+At point C, count<100 is always false.
+
+#5.2
+guess may be equal to number, so the while loop is never executed.
+
+#5.3
+(a) Infinite loop, no printout
+(b) Infinite loop, no printout
+(c) 9 times, 2,4,6,8
+
+#5.4
+(a) count variable is not incremented, infinite loop.
+(b) count variable is decremented instead of increment, infinite loop.
+(c) count+=1 must be indented inside the loop.
+
+#5.5
+max is 5
+number 0
+
+#5.6
+sum is 14
+count is 4
+
+#5.7
+Yes. The advantages of for loops are simplicity and readability.
+Compilers can produce more efficient code for the for loop than for the corresponding while loop
+
+#5.8
+sum = 0
+i= 0
+while i <= 1000:
+    sum += i
+    i += 1
+
+#5.9
+Not possible for all cases. For example, you cannot convert the while loop in Listing 5.3, GuessNumber.py, to a for loop.
+sum = 0
+for i in range(1, 10000):
+    if sum < 10000:
+        sum = sum + i
+
+#5.10
+(a) n-1
+(b) n-1
+(c) n-5
+(d) The ceiling of (n-5)/3
+
+#5.11
+(a) 0 0 1 0 1 2 0 1 2 3
+(b)
+****
+****
+2 ****
+3 2 ****
+4 3 2 ****
+(c)
+1xxx2xxx4xxx8xxx16xxx
+1xxx2xxx4xxx8xxx
+1xxx2xxx4xxx
+1xxx2xxx
+1xxx
+(d)
+1G
+1G3G
+1G3G5G
+1G3G5G7G
+1G3G5G7G9G
+
+#5.12
+It may give floating point number, for example if n1 = 3 and n2 = 1
+
+#5.13
+The keyword break is used to exit the current loop. The program in (A) will terminate. The output is Balance is 1.
+
+The keyword continue causes the rest of the loop body to be skipped for
+the current iteration. The while loop will not terminate in (B).
+
+#5.14
+If a continue statement is executed inside a for loop,
+the rest of the iteration is skipped, then the action-after-each-iteration
+is performed and the loop-continuation-condition is checked.
+If a continue statement is executed inside a while loop,
+the rest of the iteration is skipped, then the loop-continuation-condition is checked.
+
+fix:
+
+    i = 0
+
+    while i < 4:
+        if i % 3 == 0:
+         	  i += 1
+        	  continue
+        sum += i
+        i += 1
+
+#5.15
+TestBreak:
+   sum = 0
+   number = 0
+
+   while number < 20 and sum < 100:
+       number += 1
+       sum += number
+
+   print("The number is " + str(number))
+   print("The sum is " + str(sum))
+
+TestContinue:
+
+  sum = 0
+  number = 0
+
+  while (number < 20):
+      number += 1
+  if (number != 10 and number != 11):
+          sum += number
+
+  print("The sum is " + str(sum))
+
+
+#5.16
+(a) print(i)
+    1
+    2
+    1
+    2
+    2
+    3
+(b)for j in range (1,4):
+    1
+    2
+    1
+    2
+    2
+    3
+
