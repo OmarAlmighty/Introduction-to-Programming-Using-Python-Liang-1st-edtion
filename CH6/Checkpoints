@@ -1,0 +1,156 @@
+#6.1
+(1) Reuse code; (2) Reduce complexity; (3) Easy to maintain
+
+#6.2
+You can define a function using def keyword followed by function name
+ex: def myFuction(param1):
+    ...statements...
+
+To inovke a function, just write it's name in the proper line
+
+#6.3
+def max(n1,n2):
+    return n1 if n1>n2 else n2
+
+#6.4
+A call to a None function is always a statement itself(TRUE), but a call to a
+value-returning function is always a component of an expression(FALSE).
+
+#6.5
+Yes,we can have a return statement in in a None function.
+No,no syntax errors.
+
+#6.6
+The header begins with the def keyword, followed
+by the function’s name and parameters, and ends with a colon.
+The variables in the function header are known as formal parameters or simply parameters.
+A parameter is like a placeholder: When a function is invoked, you pass a value to the parameter.
+This value is referred to as an actual parameter or argument.
+
+#6.7
+(1) def computeSalesCommisions(salesAmount,salesRate):. Should return a value.
+(2) def printCalendar(month,year):. No return is needed.
+(3) def squarRoot(num):. Either print the result or return return it.
+(4) def isEven(n):. should return a value.
+(5) def computeMonthlyPayment(loanAmount,years,annualInterestRate):. Either print the result or return return it.
+(6) def upper(c):. No return is needed.
+
+#6.8
+8.	Line 2, 5-10: not indented correctly.
+
+#6.9
+None.
+
+#6.10
+The program prints None, as min function does not return a value.
+
+#6.11
+In positional arguments, the arguments are passed in the same order as
+their respective parameters in the function header.
+In keyword arguments, passing each argument in the form name=value.
+
+#6.12
+f(1, p2 = 3, p3 = 4, p4 = 4): correct
+f(1, p2 = 3, 4, p4 = 4): wrong
+f(p1 = 1, p2 = 3, 4, p4 = 4): wrong
+f(p1 = 1, p2 = 3, p3 = 4, p4 = 4): correct
+f(p4 = 1, p2 = 3, p3 = 4, p1 = 4): correct
+
+#6.13
+A variable for an object is actually a reference to the object.
+When you invoke a function with arguments, the reference value of each argument is
+passed to the parameter. This is referred to as pass-by-value in programming terminology
+
+#6.14
+Yes.
+
+#6.15
+(a) 0
+(b)
+
+2
+2 4
+2 4 8
+2 4 8 16
+2 4 8 16 32
+
+(c)
+Before the call, variable times is 3
+n =  3
+Welcome to CS!
+n =  2
+Welcome to CS!
+n =  1
+Welcome to CS!
+After the call, variable times is 3
+
+(d)
+
+
+i is 1
+ 1
+i is 2
+ 2 1
+i is 3
+then an infinite loop
+
+i is 1
+ 1
+i is 2
+ 2 1
+i is 3
+
+#6.16
+-Before invoking max, the stack contains the space required for the main function
+with max variable = 0.
+-In the max function, the first element in the stack is the space required for max function
+with variables max = 0, value 1 =1 and value2 = 2. The next element in the stack is the
+space required for main function with max variable = 0.
+-Before max return statement, the elements are the same except that max = 2 in the space of max function.
+-Return back to main function, the stack contains only space required for main function with max = 0.
+
+#6.17
+(a)
+2
+3.4
+2
+4
+(b)
+3
+6
+5
+
+#6.18
+The variables x and y which are used in lines 8 and 9 are not
+defined outside the function.
+
+#6.19
+Yes. It prints y is 1
+
+#6.20
+1 2
+5 2
+1 24
+4 5
+
+#6.21
+The parameter n (has non-default argument) should be defined before parameter message(has a default argument).
+
+#6.22
+The later definition replaces the previous definitions.
+
+#6.23
+Yes.
+14 4 45 1.8
+
+#6.24
+random.randint(34, 55)
+
+#6.25
+chr(random.randint(ord('B'),ord('M')))
+
+#6.26
+6.5 + random.random() *49.9
+
+#6.27
+chr(random.randint(ord('a'),ord('z')))
