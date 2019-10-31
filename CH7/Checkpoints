@@ -1,0 +1,97 @@
+#7.1
+Objects of the same kind are defined by using a common class. The relationship between
+classes and objects is analogous to that between an apple-pie recipe and apple pies. You can
+make as many apple pies (objects) as you want from a single recipe (class).
+
+#7.2
+class ClassName:
+    initializer
+    methods
+
+#7.3
+objName = ClassName(args)
+
+#7.4
+__init__
+
+#7.5
+self is a parameter that references the object itself. Using self, you can access object’s
+members in a class definition.
+
+#7.6
+ClassName(args)
+The arguments of the constructor match the parameters in the __init__ method without self.
+The constructor first creates an object in the memory and then invokes the initializer.
+
+#7.7
+Initializer is a special method that is used to initialize object's data when creating object.
+
+#7.8
+dot operator(.).
+
+#7.9
+Variable i in class a isn't initialized.
+Fix: a = A(x), where x is any value.
+
+#7.10
+(a) The constructor should be __init__(self).
+(b) radius = 3 should be self.radius = 3.
+
+#7.11
+count is 100
+times is 0
+
+#7.12
+count is 0
+n is 1
+
+#7.13
+AttributeError: no attribute '__i', the i attribute is
+a private data field.
+To fix this we can make i public by removing the leading __
+or provide getter method.
+
+#7.14
+Yes. It prints "Welcome"
+
+#7.15
+The code is not correct.
+To fix this we can make on attribute public by
+removing leading __ or provide getter method to
+on attribute:
+class A:
+    def __init__(self, on):
+        self.on = not on
+OR
+class A:
+    def __init__(self, on):
+        self.__on = not on
+    def isOn(self,on):
+        return self.__on
+
+def main():
+     a = A(False)
+     print(a.isOn)
+
+main() # Call the main function
+
+#7.16
+Making data fields private protects data and makes the class easy to maintain.
+To prevent direct modifications of data fields, don’t let the client directly access data fields.
+This is known as data hiding. This can be done by defining private data fields. In Python, the
+private data fields are defined with two leading underscores. You can also define a private
+method named with two leading underscores.
+
+#7.17
+def __methodName(parms):
+
+#7.18
+The object-oriented approach combines the power of the procedural paradigm
+with an added dimension that integrates data with operations into objects.
+In procedural programming, data and operations are separate, and this methodology
+requires sending data to methods. Object-oriented programming places data and the operations
+that pertain to them together in an object. This approach solves many of the problems
+inherent in procedural programming. The object-oriented programming approach organizes
+programs in a way that mirrors the real world, in which all objects are associated with both
+attributes and activities. Using objects improves software reusability and makes programs
+easier to develop and easier to maintain.
