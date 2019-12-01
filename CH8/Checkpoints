@@ -1,0 +1,84 @@
+#8.1
+(a) True
+(b) 3
+(c) True
+(d) True
+(e) True
+(f) False
+(g) True
+(h) WELCOME TO PYTHON
+(i) 8
+(j) o
+(k) ome
+(l) totototo
+(m) 17
+(n) y
+(o) (whitespace character)
+(p) t
+(q) welcome to python
+(r) 15
+(s) False
+(t) False
+(u) False
+(v) Welcome to PythonWelcome to Python
+
+#8.2
+All of them are correct statements except the statement
+"s3 = s1 - s2" because '-' is not defined over strings.
+
+#8.3
+Welcome to Python
+Welcabcme tabc Pythabcn
+
+#8.4
+(a) isEqual = (s1 == s2)
+(b) isEqual = (s1.lower() == s2.lower())
+(c) b = s1.startswith('AAA')
+(d) b = s1.endswith("AAA")
+(e) x = len(s1)
+(f) x = s1[0]
+(g) s3 = s1+s2
+(h) s3 = s1[1:]
+(i) s3 = s1[1:5]
+(j) s3 = s1.lower()
+(k) s3 = s1.upper()
+(l) s3 = s1.strip()
+(m) s3 = s1.replace('e','E')
+(n) x = s1.find('e')
+(o) x = s1.rfind('abc')
+
+#8.5
+No. The string object is immutable.
+
+#8.6
+0
+
+#8.7
+s.islower() or s.isupper()
+
+#8.8
+s.isalpha()
+
+#8.9
+Defining methods for operators is called operator overloading.
+Operator overloading allows the programmer to use the
+built-in operators for user-defined methods.
+
+#8.10
++: __add__(self, other)
+-: __sub__(self, other)
+*: __mul__(self, other)
+/: __truediv__(self, other)
+%: __mod__(self, other)
+==: __eq__(self, other)
+!=: __ne__(self, other)
+<: __lt__(self, other)
+<=: __le__(self, other)
+>: __gt__(self, other)
+>=: __ge__(self, other)
+
+#8.11
+Yes.
+
+#8.12
+Yes.
