@@ -1,0 +1,165 @@
+#9.1
+turtle module is used for drawing geometric shapes. Turtle is easy to use and is an
+effective pedagogical tool for introducing the fundamentals of programming to beginners.
+However, you cannot use turtle to create graphical user interfaces.
+Tkinter enables you to develop GUI programs and is an excellent pedagogical tool for
+learning object-oriented programming.
+
+#9.2
+window = Tk() # Create a window
+
+#9.3
+Tkinter GUI programming is event driven. After the user interface is displayed, the program
+waits for user interactions such as mouse clicks and key presses, this is achieved by window.mainloop().
+
+#9.4
+The first argument of a widget class is always the
+parent container (i.e., the container in which the widget will be placed).
+
+#9.5
+For binding method to handler of the widget.
+
+#9.6
+lbl = Label(window,text = "welcome",fg ="white",bg ="red")
+
+#9.7
+btn = Button(window,text = "OK",fg = "white",bg="red",command= self.processOK)
+
+#9.8
+cb = Checkbutton(window,text = "apple", fg = "white",bg="red", variable = self.v1 , command = self.processApple )
+
+#9.9
+rb = Radiobutton(window, text = "senior", fg = "white", bg = "red", variable = v1, command = processSenior)
+
+#9.10
+ent = Entry(window,fg = "white", bg = "red", variable = v1)
+
+#9.11
+msg = Message(window, text = "programming is fun", fg = "white", bg = "red")
+
+#9.12
+from tkinter import *
+print(LEFT)
+print(RIGHT)
+print(CENTER)
+
+#9.13
+canvas.create_line(34, 50, 50, 90)
+
+#9.14
+canvas.create_rectangle(70-50, 70-50, 70+50, 70+50,fill="red")
+
+#9.15
+canvas.create_oval(70 – 100, 70 - 50, 70 + 100, 70 + 50, fill = "red")
+
+#9.16
+canvas.create_arc(10, 10, 80, 80, start=30, extent = 45)
+
+#9.17
+canvas.create_polygon(10, 10, 15, 30, 140, 10, 10, 100)
+
+#9.18
+Using width argument to specify pen size in pixels
+
+#9.19
+The arrow argument can be used with create_line to draw an arrowed line.
+The arrow can appear at the start, end, or both ends of the line with argument value "first", "end", or "both".
+
+#9.20
+The activefill argument makes the shape change color when you move the mouse over it.
+
+#9.21
+Should identify parameter name, button.pack(side = LEFT)
+
+#9.22
+Grid
+
+#9.23
+The place manager is not compatible with all computers
+
+#9.24
+import tkinter
+
+print(X)
+print(Y)
+print(BOTH)
+print(S)
+print(N)
+print(E)
+print(W)
+print(NW)
+print(NE)
+print(SW)
+print(SE)
+
+#9.25
+GIF only.
+
+#9.26
+should be: image = PhotoImage(file = "image/us.gif")
+
+#9.27
+img = PhotoImage(file = "c:\\pybook\\image\canada.gif")
+btn = Button(window,image = img)
+
+#9.28
+menubar = Menu(window)
+window.config(menu = menubar)
+
+#9.29
+menu.post(event.x_root, event.y_root)
+
+#9.30
+canvas.bind("<Button-1>", self.p())
+
+#9.31
+<Bi-Motion>
+
+#9.32
+<Double-Button-1>
+
+#9.33
+<Tripple-Button-2>
+
+#9.34
+event
+
+#9.35
+event.x and event.y
+
+#9.36
+event.char
+
+#9.37
+canvas.sleep(milliseconds)
+
+#9.38
+canvas.update()
+
+#9.39
+Text, Canvas, Listbox
+
+#9.40
+Here is an example to associate a Text with a scrollbar.
+
+        text = Text(frame1, width = 40, height = 10, wrap = WORD,
+                    yscrollcommand = scrollbar.set)
+        text.pack()
+        scrollbar.config(command = text.yview)
+
+#9.41
+tkinter.messagebox.showinfo("showinfo", "Welcome to Python")
+
+#9.42
+age = tkinter.simpledialog.askinteger(
+    "askinteger", "Enter your ages")
+print(age)
+
+weight = tkinter.simpledialog.askfloat(
+    "askfloat", "Enter your weight")
+print(weight)
+
+name = tkinter.simpledialog.askstring(
+    "askstring", "Enter your name")
+print(name)
+
