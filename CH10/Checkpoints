@@ -1,0 +1,110 @@
+#10.1
+lst = []
+lst = [1,32,2]
+
+#10.2
+6
+0
+5
+12
+10
+
+#10.3
+lst.append(40) => [30, 1, 2, 1, 0, 40]
+lst.insert(1, 43) => [30, 43, 1, 2, 1, 0]
+lst.extend([1, 43]) => [30, 1, 2, 1, 0, 1, 43]
+lst.remove(1) => [30, 2, 1, 0]
+lst.pop(1) => [30, 2, 1, 0]
+lst.pop() => [30, 1, 2, 1]
+lst.sort() => [0, 1, 1, 2, 30]
+lst.reverse() => [0, 1, 2, 1, 30]
+random.shuffle(list) => list is randomly shuffled
+
+#10.4
+lst.index(1) => 1
+lst.count(1) => 2
+len(lst) => 5
+max(lst) => 30
+min(lst) => 0
+sum(lst) => 34
+
+#10.5
+list1 + list2 => [30,1,2,1,0,1,21,13]
+2 * list2 => [1,21,31,21,13]
+list2 * 2 => [1,21,31,21,13]
+list1[1 : 3] =>[1,2]
+list1[3] => 1
+
+#10.6
+[x for x in list1 if x > 1] => [30,2]
+[x for x in range(0, 10, 2)] => [0,2,4,8]
+[x for x in range(10, 0, -2)] => [10,8,6,4,2]
+
+#10.7
+list1 < list2 --> False
+list1 <= list2 --> False
+list1 == list2 --> False
+list1 != list2 --> True
+list1 > list2 --> True
+list1 >= list2 --> True
+
+#10.8
+a) False
+b) False
+c) True
+d) True
+
+#10.9
+Both list1 and list2 are [22,43], because lists is a reference to list1
+
+#10.10
+list1 = [1,43]
+list2 = [22,43]
+
+#10.11
+list(s)
+s1.split('o') = ['Welc', 'me']
+
+#10.12
+a) lst = [False] *100
+b) lst[len(lst)-1] = 5.5
+c) print(lst[0] + lst[1])
+d) s = sum(lst[0:5])
+e) m = min(lst)
+f) print(lst[random.randint(0, len(lst) – 1)])
+
+#10.13
+Causes a run time error (index out of range)
+
+#10.14
+[1, 1, 1, 1, 1, 1]
+
+#10.15
+[111, 3, 5, 7, 9]
+[111, 3, 5, 7, 9]
+
+#10.16
+[111, 3, 5, 7, 9]
+[1, 3, 5, 7, 9]
+
+#10.17
+False
+
+#10.18
+a) number is 0 and numbers[0] is 3
+b) 1 2 3 4 5
+
+#10.19
+a) [1, 2, 3] and [2, 3]
+b) [1, 2, 3] and [1, 2, 3]
+
+#10.21
+The number must be inserted before the number larger than it
+and after the number less than it. if binary search returns -4 (-low - 1),
+the number must be inserted in index 3.
+
+#10.24
+In line 9, change if currentMin > lst[j] to if currentMin < lst[j]:
+
+#10.25
+In line 8, change lst[k] > currentElement to lst[k] < currentElement
