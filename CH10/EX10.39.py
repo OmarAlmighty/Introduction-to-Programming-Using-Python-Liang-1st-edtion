@@ -60,8 +60,12 @@ class MainGUI:
             self.cards[i] = str(self.cards[i])
 
     def verify(self):
-        if eval(self.exp.get()) == 24.0:
-            lst = self.exp.get().split()
+        lst = self.exp.get()
+        print(eval(lst))
+        if eval(lst) == 24.0:
+            lst = re.sub(r'[^\w]', ' ', lst)
+            print(lst)
+            lst = lst.split()
             for x in lst:
                 if x in self.cards:
                     self.cards.remove(x)

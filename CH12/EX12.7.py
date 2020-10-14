@@ -1,23 +1,10 @@
-# 8.19 (Geometry: The Rectangle2D class) Define the Rectangle2D class that
-# contains:
-# ■ Two float data fields named x and y that specify the center of the rectangle
-# with get/set methods. (Assume that the rectangle sides are parallel to x- or yaxes.)
-# ■ The data fields width and height with get/set methods.
-# ■ A constructor that creates a rectangle with the specified x, y, width, and
-# height with default values 0.
-# ■ A method getArea() that returns the area of the rectangle.
-# ■ A method getPerimeter() that returns the perimeter of the rectangle.
-# ■ A method containsPoint(x, y) that returns True if the specified point (x,
-# y) is inside this rectangle (see Figure 8.11a).
-# ■ A method contains(Rectangle2D) that returns True if the specified
-# rectangle is inside this rectangle (see Figure 8.11b).
-# ■ A method overlaps(Rectangle2D) that returns True if the specified
-# rectangle overlaps with this rectangle (see Figure 8.11c).
-# ■ Implement the __contains__(another) method that returns True if this
-# rectangle is contained in another rectangle.
-# ■ Implement the _ _cmp__, __lt__, __le_ _, __eq_ _, __ne__, __gt__,
-# __ge__ methods that compare two circles based on their areas.
+# 12.7 (Tkinter: two rectangles intersect?) Using the Rectangle2D class you defined in
+# Exercise 8.19, write a program that enables the user to point the mouse inside a
+# rectangle and drag it. As the rectangle is being dragged, the label displays whether
+# two rectangles overlap, as shown in Figure 12.19.
+
 import math
+from tkinter import *
 
 
 class Rectangle2D:
@@ -93,18 +80,45 @@ class Rectangle2D:
         return self.__cmp__(rect) >= 0
 
 
-def main():
-    x1, y1, w1, h1 = eval(input("Enter x1, y1, width1, height1: "))
-    x2, y2, w2, h2 = eval(input("Enter x2, y2, width2, height2: "))
-    r1 = Rectangle2D(x1, y1, w1, h1)
-    r2 = Rectangle2D(x2, y2, w2, h2)
-    print("Area for r1 is", r1.getArea())
-    print("Perimeter for r1", r1.getPerimeter())
-    print("Area for r2 is", r2.getArea())
-    print("Perimeter for r2", r2.getPerimeter())
-    print("r1 contains the center of r2?", r1.containsPoint(r2.getX(), r2.getY()))
-    print("r1 contains r2?", r1.contains(r2))
-    print("r1 overlaps r2?", r1.overlaps(r2))
+def displayRectangle(r, text):
+    canvas.delete(text)
+    canvas.create_rectangle(r.getX(), r.getY(), r.getX() + r.getWidth(), r.getY() + r.getHeight(), tags=text)
+    canvas.create_text(r.getX() + r.getWidth() / 2, r.getY() + r.getHeight() / 2, text=text, tags=text)
 
 
-main()
+def mouseMoved(event):
+    if r1.containsPoint(event.x, event.y):
+        r1.setX(event.x)
+        r1.setY(event.y)
+        displayRectangle(r1, "r1")
+        if r1.overlaps(r2):
+            label["text"] = "Two rectangles intersect"
+        else:
+            label["text"] = "Two rectangles don't intersect"
+    if r2.containsPoint(event.x, event.y):
+        r2.setX(event.x)
+        r2.setY(event.y)
+        displayRectangle(r2, "r2")
+        if r1.overlaps(r2):
+            label["text"] = "Two rectangles intersect"
+        else:
+            label["text"] = "Two rectangles don't intersect"
+
+
+window = Tk()  # Create a window
+window.title("Two Rectangles")  # Set title
+
+width = 500
+height = 500
+label = Label(window, text="Two rectangles intersect")
+label.pack()
+canvas = Canvas(window, width=width, height=height)
+canvas.pack()
+
+canvas.bind("<B1-Motion>", mouseMoved)
+r1 = Rectangle2D(15, 20, 90, 120)
+r2 = Rectangle2D(100, 50, 120, 90)
+displayRectangle(r1, "r1")
+displayRectangle(r2, "r2")
+
+window.mainloop()

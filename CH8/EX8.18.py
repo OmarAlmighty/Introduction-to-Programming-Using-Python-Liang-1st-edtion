@@ -56,7 +56,7 @@ class Circle2D:
 
     def containsPoint(self, x, y):
         dis = math.sqrt((self.getX() - x) ** 2 + (self.getY() - y) ** 2)
-        return True if dis <= self.getArea() else False
+        return True if dis <= self.getRadius() else False
 
     def contains(self, circle):
         dis = math.sqrt((self.getX() - circle.getX()) ** 2 + (self.getY() - circle.getY()) ** 2)

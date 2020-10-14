@@ -1,0 +1,104 @@
+#12.1
+To define a class that extend a super class, we use the following syntax:
+    subclassName(superclassName):
+        super().__init__()
+The super() keyword is used to refer to the superclass, The superclass initializer
+is invoked using super().__init__()
+
+#12.2
+The variable i in class A is not inherited in class B, so we
+cannot access variable i from the object b. To fix it, we have to
+invoke super().__init__() in the class B’s __init__ method.
+
+#12.3
+False.
+
+#12.4
+Yes. Using the following syntax
+class Subclass(SuperClass1, SuperClass2, ...):
+    initializer
+    methods
+
+#12.5
+(a) True
+(b) False
+(c) False
+(d) False
+
+#12.6
+4
+0
+
+#12.7
+(a) True
+(b) True
+
+#12.8
+8
+
+#12.9
+B's __new__() invoked
+A's __new__() invoked
+
+#12.10
+B's __init__() invoked
+B's __new__() invoked
+A's __init__() invoked
+A's __new__() invoked
+
+#12.11
+B's __init__() invoked
+A's __init__() invoked
+
+#12.12
+A
+A
+
+#12.13
+True
+
+#12.14
+Encapsulation: the details of implementation are encapsulated and hidden from the user.
+In essence, encapsulation combines data and methods into a single object and hides the
+data fields and method implementation from the user.
+
+Inheritance: The inheritance relationship enables a subclass to inherit features from its superclass with
+additional new features. A subclass is a specialization of its superclass; every instance of a
+subclass is also an instance of its superclass, but not vice versa.
+
+Polymorphism: Polymorphism means that an object of a subclass can be passed to a parameter of a
+superclass type.
+
+#12.15
+(a) Person
+    Student
+(b) Person
+    Person
+
+#12.16
+(a) True
+(b) False
+(c) True
+(d) True
+(e) False
+(f) True
+(g) True
+(h) False
+(i) Can goldenDelicious invoke this method? True
+    Can orange invoke this method? False
+(j) Can orange invoke this method? True
+    Can goldenDelicious invoke this method? False
+
+#12.17
+the common types of relationships among classes are:
+1) Inheritance
+2) Association
+3) Aggregation
+4) Composition
+
+#12.18
+•	Company and Employee >>  Association
+•	Course and Faculty   >>	 Aggregation
+•	Student and Person   >>	 Inheritance
+•	House and Window     >>	 Composition
+•	Account and Savings Account	 >> Inheritance
