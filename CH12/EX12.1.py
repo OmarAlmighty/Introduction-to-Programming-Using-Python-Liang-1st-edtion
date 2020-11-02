@@ -61,7 +61,7 @@ class Triangle(GeometricObject):
         return self.side2
 
     def setSide2(self, side2):
-        self.side1 = side2
+        self.side2 = side2
 
     def getSide3(self):
         return self.side3

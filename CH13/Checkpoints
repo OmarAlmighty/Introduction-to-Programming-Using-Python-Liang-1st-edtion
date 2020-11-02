@@ -1,0 +1,119 @@
+#13.1
+For reading: open(filename,'r')
+For writing: open(filename,'w')
+For appending: open(filename,'a')
+
+#13.2
+The file name string must has prefix r or with double backslash:
+r"c:\book\test.txt"
+or, "c:\\book\\test.txt"
+
+#13.3
+A runtime error will be thrown.
+The current file content will overwritten.
+
+#13.4
+os.path.isfile(filename)
+
+#13.5
+filename.read(30)
+
+#13.6
+s = filename.read()
+
+#13.7
+filename.readline()
+
+#13.8
+lines = filename.readlines()
+
+#13.9
+No, it will return ''
+
+#13.10
+If the read function returns ''
+
+#13.11
+filename.write(data)
+
+#13.12
+Using repr function. Or, using notation r"string".
+
+#13.13
+To write numeric data, write them as strings separated by spaces.
+To read the numeric data, read the data, split them by spaces, and evaluate numbers values
+
+#13.14
+filenameforReading = askopenfilename()
+
+#13.15
+filenameforWriting = asksaveasfilename()
+
+#13.16
+infile = urllib.request.urlopen(url)
+
+#13.17
+decode()
+
+#13.18
+1) Will statement3 be executed? NO
+2) If the exception is not caught, will statement4 be executed? NO
+3) If the exception is caught in the except block, will statement4 be executed? YES
+
+#13.19
+Index out of bound
+
+#13.20
+Divided by zero!
+
+#13.21
+Index out of bound
+
+#13.22
+1) Will statement5 be executed if the exception is not caught? NO
+2) If the exception is of type Exception3, will statement4 be executed, and will
+statement5 be executed? YES, both will be executed
+
+#13.23
+raise ExceptionClass()
+
+#13.24
+1) Preventing the program from terminating abnormally.
+2) Informing the user that he/she may made an error.
+3) The essential benefit of exception handling is to separate the detection of an error (done in a called function)
+   from the handling of an error (done in the calling method).
+
+#13.25
+Done
+Nothing is wrong
+Finally we are here
+Continue
+
+#13.26
+Index out of bound
+Finally we are here
+Continue
+
+#13.27
+ArithmeticError class is super class of ZeroDivisionError,
+So ZeroDivisionError should be placed before ArithmeticError
+
+#13.28
+You can define a custom exception class by extending BaseException or a subclass
+of BaseException.
+
+#13.29
+For writing: file = open(filename, "wb")
+For reading: file = open(filename, "rb")
+
+#13.30
+To write an object: pickle.dump(data, filename)
+To read an object:  pickle.load(filename)
+
+#13.31
+The file is closed in the finally clause after pickle.load(infile) is executed,
+even though the end of file is not reached.
+
+#13.32
+Yes.
+
