@@ -1,0 +1,140 @@
+#14.1
+Tuples are like lists, but their elements are fixed; that is, once a tuple is created, you
+cannot add new elements, delete elements, replace elements, or reorder the elements in
+the tuple.
+To create a tuple from a list: t = tuple(lst)
+To create a list from a tuple: lst = list(tpl)
+
+#14.2
+t is a tuple, which its elements are fixed; we
+cannot used append and remove functions or change its content.
+
+#14.3
+Yes. Now t1 and t2 refer to the same tuple.
+
+#14.4
+(1, 2, 3, 7, 9, 0, 5)
+1
+(2, 3)
+5
+(1, 2, 3, 7, 9, 0)
+(2, 3, 7, 9, 0)
+
+#14.5
+9
+0
+27
+7
+
+#14.6
+False
+True
+False
+True
+
+#14.7
+st = set() or st = {}
+
+#14.8
+Yes.
+
+#14.9
+s = {1, 3, 4}   # Correct
+s = {{1, 2}, {4, 5}} # Incorrect, because unhashable set
+s = {[1, 2], [4, 5]} # Incorrect, because unhashable list
+s = {(1, 2), (4, 5)} # Correct (1, 2), (4, 5) are tuples. They are hashable
+
+#14.10
+Sets are like lists to store a collection of items. Unlike lists,
+the elements in a set are unique and are not placed in any particular ordered.
+To create a set from a list, use set(list). To create a list from a set, use list(set).
+
+#14.11
+{'peter', 'john'}
+{'peter', 'john'}
+{'peter', 'peterson', 'john'}
+{'peterson', 'john'}
+
+#14.12
+Yes. It will throw an exception.
+
+#14.13
+True
+False
+False
+False
+True
+True
+
+#14.14
+4
+6
+1
+16
+
+#14.15
+{1, 3, 4, 5, 6, 7}
+{1, 3, 4, 5, 6, 7}
+{1, 6}
+{1, 6}
+{4, 5}
+{4, 5}
+{3, 4, 5, 7}
+{3, 4, 5, 7}
+
+#14.16
+False
+True
+4
+11
+2
+23
+True
+True
+
+#14.17
+{1, 2, 3} {3, 4, 5} {1, 2, 3, 4, 5}
+{1, 2, 3} {3, 4, 5} {1, 2}
+{1, 2, 3} {3, 4, 5} {3}
+{1, 2, 3} {3, 4, 5} {1, 2, 4, 5}
+
+#14.18
+dict = {}
+
+#14.19
+d = {1:[1, 2], 3:[3, 4]}
+d = {1:"john", 3:"peter"}
+d = {"john":1, "peter":3}
+
+#14.20
+The two parts of a dictionary are the key and its corresponding value.
+
+#14.21
+(a) Adds a new item "susan":5
+(b) Updates the value of the key "peter" to 5
+(c) Adding 5 to the existing value of key "peter"
+(d) Delete the item with key "peter"
+
+#14.22
+(a) Prints the length of the dictionary, 2
+(b) Prints the keys of the dictionary, "john" and "peter"
+(c) Prints the values of the dictionary, 3 and 2
+(d) Prints the key/value pairs of the dictionary, {"john":3, "peter":2}
+
+#14.23
+4
+['red', 'blue', 'green', 'yellow']
+[4, 1, 14, 2]
+True
+False
+11
+
+#14.24
+5
+
+#14.25
+In case of the key does not exist in the d,
+d[key] raises an exception while d.get(key) returns None.
+
+
+
