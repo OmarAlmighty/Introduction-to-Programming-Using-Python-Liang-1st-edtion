@@ -1,0 +1,105 @@
+#15.1
+A recursive function is one that invokes itself.
+
+#15.2
+6 times.
+
+#15.3
+f(n) = 2 if n = 1
+f(n) = 2 * f(n-1) if (n > 1)
+
+#15.4
+f(x, n) = x if n = 1
+f(x, n) = x * f(n-1) if (n > 1)
+
+#15.5
+f(n) = 1 if n=1
+f(n) = n + f(n-1) if n>1
+
+#15.6
+Infinite recursion: if recursion does not reduce the problem in a manner that
+allows it to eventually converge into the base case
+Direct recursion: a recursion where the recursive function only invokes itself.
+Indirect recursion: a recursion where tow or more functions invoke each other in a recursive manner.
+This occurs when function A invokes function B, which in turn invokes function A.
+
+#15.7
+25 times:
+number of time fib is invoked in fib(6) =
+1+ number of time fib is invoked in fib(4)+number of time fib is invoked in fib(5) = 1+9+15=25
+
+#15.8
+(a)
+Output: 15 (5 + 4 + 3 + 2 + 1 = 15)
+Base case: if (n == 1)
+Recursive call: f(n – 1)
+(b)
+Output: 7654321
+Base case: if (n > 0)
+Recursive call: f(n // 10)
+
+#15.9
+1) The function is implemented using an if-else or a switch statement that leads to
+different cases.
+2) One or more base cases (the simplest case) are used to stop recursion.
+3) Every recursive call reduces the original problem, bringing it increasingly closer to a
+base case until it becomes that case.
+
+#15.10
+SKIPPED.
+
+#15.11
+(a) 5 4 3 2 1
+(b) 1 2 3 4 5
+
+#15.12
+n/10 should be n//10
+
+#15.13
+A second function that receives additional parameters used with the original recursive function.
+
+#15.14
+SKIPPED.
+
+#15.15
+■ os.path.isfile(s), which returns True if s is a filename. Recall that this function
+  was introduced in §13.2.3 to check if a file exists.
+■ os.path.getsize(filename), which returns the size of the file.
+■ os.listdir(directory), which returns a list of the subdirectories and files
+  under the directory.
+
+#15.16
+31 times.
+
+#15.17
+Any recursive functions can be converted into a non-recursive function.  (TRUE)
+Recursive function usually takes more time and memory to execute than non-recursive functions. (TRUE)
+Recursive functions are always simpler than non-recursive functions. (FALSE)
+There is always a condition statement in a recursive function to check whether a base case is reached. (TRUE)
+
+#15.18
+When a function is invoked, its contents are placed into a stack. If a function is recursively invoked,
+it is possible that the stack space is exhausted. This causes stack overflow.
+
+#15.19
+A recursive function is said to be tail recursive if there are no pending operations to be performed
+on return from a recursive call.
+
+#15.20
+Tail recursion may be desirable: Because the function ends when the last recursive call
+ends, there is no need to store the intermediate calls in the stack.
+
+#15.21
+Yes.
+
+#15.22
+# Return the Fibonacci number for the specified index
+def fib(index):
+    return fib1(index, 1, 0)
+
+# Auxiliary tail-recursive function for fib
+def fib1(index, next, result):
+    if (index == 0):
+        return result
+    else:
+        return fib1(index - 1, next + result, next)
