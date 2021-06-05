@@ -29,7 +29,11 @@ n3 = NUM
 
 if num == guess:
     print("Exact match. You won $10,000")
-elif (g1 == n1 or g1 == n2 or g1 == n3) and (g2 == n1 or g2 == n2 or g2 == n3) and (g3 == n1 or g3 == n2 or g3 == n3):
+elif (  g1 == n1 and g3 == n2 and g2 == n3 or
+        g2 == n1 and g1 == n2 and g3 == n3 or
+        g2 == n1 and g3 == n2 and g1 == n3 or
+        g3 == n1 and g1 == n2 and g2 == n3 or
+        g3 == n1 and g2 == n2 and g1 == n3):
     print("Match all digits: you win $3,000")
 elif (g1 == n2 or g1 == n3
       or g2 == n1 or g2 == n3
