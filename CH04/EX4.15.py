@@ -10,11 +10,11 @@
 import random
 
 num = random.randint(100, 999)
-print(str(num))
 guess = int(input("Enter 3 digit number: "))
 
 NUM = num
 GUESS = guess
+
 g1 = GUESS // 100
 GUESS %= 100
 g2 = GUESS // 10
@@ -29,15 +29,15 @@ n3 = NUM
 
 if num == guess:
     print("Exact match. You won $10,000")
-elif (  g1 == n1 and g3 == n2 and g2 == n3 or
-        g2 == n1 and g1 == n2 and g3 == n3 or
-        g2 == n1 and g3 == n2 and g1 == n3 or
-        g3 == n1 and g1 == n2 and g2 == n3 or
-        g3 == n1 and g2 == n2 and g1 == n3):
+elif (g1 == n1 and g3 == n2 and g2 == n3 or
+      g2 == n1 and g1 == n2 and g3 == n3 or
+      g2 == n1 and g3 == n2 and g1 == n3 or
+      g3 == n1 and g1 == n2 and g2 == n3 or
+      g3 == n1 and g2 == n2 and g1 == n3):
     print("Match all digits: you win $3,000")
-elif (g1 == n2 or g1 == n3
-      or g2 == n1 or g2 == n3
-      or g3 == n1 or g3 == n2):
+elif (g1 == n1 or g1 == n2 or g1 == n3
+      or g2 == n1 or g2 == n2 or g2 == n3
+      or g3 == n1 or g3 == n2 or g3 == n2):
     print("Match one digit: you win $1,000")
 else:
     print("Sorry, no match")
